@@ -1,4 +1,4 @@
-\documentclass[sigchi, review]{acmart}
+\documentclass[sigconf]{acmart}
 
 \usepackage{booktabs} % For formal tables
 
@@ -7,13 +7,12 @@
 %\setcopyright{none}
 %\setcopyright{acmcopyright}
 %\setcopyright{acmlicensed}
-%\setcopyright{rightsretained}
+\setcopyright{rightsretained}
 %\setcopyright{usgov}
 %\setcopyright{usgovmixed}
 %\setcopyright{cagov}
-\setcopyright{licensedcagov}
 %\setcopyright{cagovmixed}
-%\setcopyright{licensedothergov}
+
 
 % DOI
 \acmDOI{10.475/123_4}
@@ -27,7 +26,15 @@
 \acmYear{1997}
 \copyrightyear{2016}
 
+
+\acmArticle{4}
 \acmPrice{15.00}
+
+% These commands are optional
+%\acmBooktitle{Transactions of the ACM Woodstock conference}
+\editor{Jennifer B. Sartor}
+\editor{Theo D'Hondt}
+\editor{Wolfgang De Meuter}
 
 
 \begin{document}
@@ -37,6 +44,7 @@
 \subtitle{Extended Abstract}
 \subtitlenote{The full version of the author's guide is available as
   \texttt{acmart.pdf} document}
+
 
 \author{Ben Trovato}
 \authornote{Dr.~Trovato insisted his name be first.}
@@ -90,7 +98,8 @@
   \streetaddress{30 Shuangqing Rd}
   \city{Haidian Qu}
   \state{Beijing Shi}
-  \country{China}}
+  \country{China}
+}
 
 \author{Charles Palmer}
 \affiliation{%
@@ -116,7 +125,7 @@
 \begin{abstract}
 This paper provides a sample of a \LaTeX\ document which conforms,
 somewhat loosely, to the formatting guidelines for
-ACM SIG Proceedings.
+ACM SIG Proceedings.\footnote{This is an abstract footnote}
 \end{abstract}
 
 %
@@ -157,16 +166,9 @@ ACM SIG Proceedings.
 
 \keywords{ACM proceedings, \LaTeX, text tagging}
 
-\begin{teaserfigure}
-  \includegraphics[width=\textwidth]{sampleteaser}
-  \caption{This is a teaser}
-  \label{fig:teaser}
-\end{teaserfigure}
-
 
 \maketitle
 
-\input{samplebody-conf}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{sample-bibliography}
