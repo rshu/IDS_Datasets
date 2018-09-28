@@ -38,7 +38,7 @@
 
 
 \begin{document}
-\title{SIG Proceedings Paper in LaTeX Format}
+\title{Report of Existing Intrusion Detection Datasets}
 % \titlenote{Produces the permission block, and
 %   copyright information}
 % \subtitle{Extended Abstract}
@@ -46,38 +46,21 @@
 %   \texttt{acmart.pdf} document}
 
 
-\author{Ben Trovato}
-\authornote{Dr.~Trovato insisted his name be first.}
-\orcid{1234-5678-9012}
+\author{Rui Shu}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin}
-  \state{Ohio}
-  \postcode{43017-6221}
+  \institution{North Carolina State University}
+  \city{Raleigh}
+  \state{NC}
 }
-\email{trovato@corporation.com}
+\email{rshu@ncsu.edu}
 
-\author{G.K.M. Tobin}
-\authornote{The secretary disavows any knowledge of this author's actions.}
+\author{Tim Menzies}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin}
-  \state{Ohio}
-  \postcode{43017-6221}
+  \institution{North Carolina State University}
+  \city{Raleigh}
+  \state{NC}
 }
-\email{webmaster@marysville-ohio.com}
-
-\author{Lars Th{\o}rv{\"a}ld}
-\authornote{This author is the
-  one who did all the really hard work.}
-\affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
-  \city{Hekla}
-  \country{Iceland}}
-\email{larst@affiliation.org}
+\email{timm@ieee.org}
 
 
 % The default list of authors is too long for headers.
@@ -85,9 +68,7 @@
 
 
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms,
-somewhat loosely, to the formatting guidelines for
-ACM SIG Proceedings.\footnote{This is an abstract footnote}
+We collect a bunch of datasets used in security related papers. The aim of this work is to figure out how these datasets are used (i.e., dependent variables, independent variables). We care about the data pre-processing, research goals (range), what are the evaluation measures,
 \end{abstract}
 
 %
@@ -126,13 +107,14 @@ ACM SIG Proceedings.\footnote{This is an abstract footnote}
 % \ccsdesc[100]{Networks~Network reliability}
 
 
-\keywords{ACM proceedings, \LaTeX, text tagging}
-
+\keywords{Intrusion Detection}
 
 \maketitle
 
+\input{introduction}
+\input{datasets}
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-bibliography}
+\bibliography{acmart}
 
 \end{document}
