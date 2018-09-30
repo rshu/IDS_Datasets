@@ -1,1 +1,12 @@
 \section{Introduction}
+
+In network intrusion detection (IDS), anomaly-based approaches in particular suffer from accurate evaluation, comparison, and deployment which originates from the scarcity of adequate datasets. Many such datasets are internal and cannot be shared due to privacy issues, others are heavily anonymized and do not reflect current trends, or they lack certain statistical characteristics. These deficiencies are primarily the reasons why a perfect dataset is yet to exist. Thus, researchers must resort to datasets which they can obtain that are often suboptimal.
+
+What traits contribute to a \textbf{good security dataset}? ~\cite{shiravi2012toward}
+\begin{enumerate}
+    \item Realistic. A good dataset should ideally reflects the real effects attacks and corresponding response of the victims. So, it is necessary for both the attackers and the victims to behave as realistically as possible. Artificial adjustments or post-capture trace insertion that negatively affect the raw data and introduce inconsistency to the dataset should be avoided.
+    \item Labeled Data. A labeled data allows for the distinction between normal and anomalous activities, which eliminating the impractical process of manual labeling.
+    \item Large amount. A dataset with larger amount is far more important for us to detect the abnormal activities than a small amount of dataset. 
+    \item Complete Capture. Privacy concerns usually be the obstacle for researchers to share their complete datasets. Limited datasets or heavily anomayzed datasets usually removed some features or traces that results in decreased utility. 
+    \item Diverse scenarios.
+\end{enumerate}

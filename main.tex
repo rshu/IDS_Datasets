@@ -1,13 +1,15 @@
 \documentclass[sigconf]{acmart}
 
 \usepackage{booktabs} % For formal tables
-
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{lscape}
 
 % Copyright
 %\setcopyright{none}
 %\setcopyright{acmcopyright}
 %\setcopyright{acmlicensed}
-\setcopyright{rightsretained}
+% \setcopyright{rightsretained}
 %\setcopyright{usgov}
 %\setcopyright{usgovmixed}
 %\setcopyright{cagov}
@@ -15,26 +17,26 @@
 
 
 % DOI
-\acmDOI{10.475/123_4}
+% \acmDOI{10.475/123_4}
 
 % ISBN
-\acmISBN{123-4567-24-567/08/06}
+% \acmISBN{123-4567-24-567/08/06}
 
 %Conference
-\acmConference[WOODSTOCK'97]{ACM Woodstock conference}{July 1997}{El
-  Paso, Texas USA}
-\acmYear{1997}
-\copyrightyear{2016}
+% \acmConference[WOODSTOCK'97]{ACM Woodstock conference}{July 1997}{El
+%   Paso, Texas USA}
+% \acmYear{1997}
+% \copyrightyear{2016}
 
 
-\acmArticle{4}
-\acmPrice{15.00}
+% \acmArticle{4}
+% \acmPrice{15.00}
 
 % These commands are optional
 %\acmBooktitle{Transactions of the ACM Woodstock conference}
-\editor{Jennifer B. Sartor}
-\editor{Theo D'Hondt}
-\editor{Wolfgang De Meuter}
+% \editor{Jennifer B. Sartor}
+% \editor{Theo D'Hondt}
+% \editor{Wolfgang De Meuter}
 
 
 \begin{document}
@@ -64,11 +66,11 @@
 
 
 % The default list of authors is too long for headers.
-\renewcommand{\shortauthors}{B. Trovato et al.}
+% \renewcommand{\shortauthors}{B. Trovato et al.}
 
 
 \begin{abstract}
-We collect a bunch of datasets used in security related papers. The aim of this work is to figure out how these datasets are used (i.e., dependent variables, independent variables). We care about the data pre-processing, research goals (range), what are the evaluation measures,
+We collect a bunch of datasets used in security related papers. The aim of this work is to figure out how these datasets are used (i.e., dependent variables, independent variables). We care about the data pre-processing, research goals (range), what are the evaluation measurement, scenarios., percentage of abnormal data/records in total data/records, etc.
 \end{abstract}
 
 %
@@ -113,6 +115,7 @@ We collect a bunch of datasets used in security related papers. The aim of this 
 
 \input{introduction}
 \input{datasets}
+\input{critique}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{acmart}
