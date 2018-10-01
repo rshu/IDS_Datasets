@@ -1,12 +1,9 @@
 \clearpage
-% \newpage
-
-\begin{landscape}
-\begin{table*}[ht]
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\begin{sidewaystable}  \centering \scriptsize
+\begin{tabular}{|c|l|c|c|c|c|c|c|c|c|}
 \hline
-\textbf{No.} & \textbf{Dataset} & \textbf{Year} & \textbf{Source} & \textbf{Accessible} & \textbf{Data Type} & \textbf{Features} & \textbf{\begin{tabular}[c]{@{}c@{}}Percentage of\\ abnormal data\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Sample\\ Cited papers\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Research Goals  of \\ Sample Cited Papers\end{tabular}} \\ \hline
-1 & ADFA-LD & 2013 & UNSW & Open & System Call Traces & system call name, frequency etc. & 12.13\% &  &  \\ \hline
+\textbf{No.} & \multicolumn{1}{c|}{\textbf{Dataset}} & \textbf{Year} & \textbf{Source} & \textbf{Accessible} & \textbf{Data Type} & \textbf{Features} & \textbf{\begin{tabular}[c]{@{}c@{}}Percentage of\\ abnormal data\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Sample\\ Cited papers\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Research Goals  of \\ Sample Cited Papers\end{tabular}} \\ \hline
+1 & ADFA-LD & 2013 & UNSW & Open & System Call Traces & \begin{tabular}[c]{@{}c@{}}system call name\\ frequency etc.\end{tabular} & 12.13\% &  &  \\ \hline
 2 & CDX & 2009 & \begin{tabular}[c]{@{}c@{}}NSA, US Military \\ Academy West Point\end{tabular} & Open & \begin{tabular}[c]{@{}c@{}}TCP Dumps and\\ Snort IDS Logs\end{tabular} &  &  &  &  \\ \hline
 3 & KDD 98\&99 & 1998-1999 & University of California, Irvine & Open & Network Traffic &  & 19.84\% &  & Used for the evaluation of anomaly detection methods \\ \hline
 4 & DARPA & 1998-2000 & DARPA \& MIT Lincoln Labs & Open & Network Traffic &  &  &  &  \\ \hline
@@ -19,26 +16,24 @@
 11 & Android Botnet dataset &  & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email & URLs in Apk &  & 10.95\% &  &  \\ \hline
 12 & ISCXTor2016 & 2016 & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email & Network Traffic &  &  &  &  \\ \hline
 13 & CIC DoS dataset & 2017 & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email &  &  &  &  &  \\ \hline
-14 & \begin{tabular}[c]{@{}c@{}}Android Adware and \\ General Malware Dataset\end{tabular} & 2017 & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email & Network Traffic & 24 & 21.05\% &  & Used to test an Android Malware Detection Model \\ \hline
+14 & \begin{tabular}[c]{@{}l@{}}Android Adware and \\ General Malware Dataset\end{tabular} & 2017 & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email & Network Traffic & 24 & 21.05\% &  & Used to test an Android Malware Detection Model \\ \hline
 15 & CICAndMal2017 & 2017 & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email & Network Traffic & \textgreater{}80 & 7.76\% &  &  \\ \hline
-16 & \begin{tabular}[c]{@{}c@{}}CSE-CIC-IDS2018\\ on AWS\end{tabular} &  & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email &  &  &  &  &  \\ \hline
-17 & DEFCON  Dataset & 2000-2002 & The Shmoo Group &  & Network Traffic &  &  &  & This dataset is used to evaluate alert correlation techniques \\ \hline
+16 & \begin{tabular}[c]{@{}l@{}}CSE-CIC-IDS2018\\ on AWS\end{tabular} & 2018 & \begin{tabular}[c]{@{}c@{}}Canadian Institute for Cybersecurity\\ University of New Brunswick\end{tabular} & Request by email & Network Traffic & 83 &  &  &  \\ \hline
 18 & CAIDA & 2002-2016 & Center of Applied Internet Data Analysis &  & Network Traffic &  &  &  &  \\ \hline
 19 & LBNL & 2004-2005 & \begin{tabular}[c]{@{}c@{}}Lawrence Berkeley National Laboratory\\ and ICSI\end{tabular} &  & Network Traffic &  &  &  &  \\ \hline
-20 & Kyoto & 2009 & Kyoto University &  & Network Traffic &  &  &  &  \\ \hline
+20 & Kyoto 2006+ Dataset & 2006-2009 & Kyoto University & Open & Network Traffic & 24 & 46.24\% &  & Used for evaluation of NIDSs \\ \hline
 21 & Twente & 2009 & University of Twente &  & Network Traffic &  &  &  &  \\ \hline
 22 & UMASS & 2011 & University of Massachusetts &  & Network Traffic &  &  &  &  \\ \hline
 23 & Drebin &  &  &  &  &  &  &  &  \\ \hline
 24 & HTTP DATASET CSIC & 2010 &  &  &  &  &  &  &  \\ \hline
 25 & AWID &  &  &  &  &  &  &  &  \\ \hline
 26 & CIDDS &  &  &  &  &  &  &  &  \\ \hline
-27 & Comprehensive, Multi-Source Cyber-Security Events &  &  &  &  &  &  &  &  \\ \hline
-28 & User-Computer Authentication Associations in Time &  &  &  &  &  &  &  &  \\ \hline
-29 & Unified Host and Network Dataset &  &  &  &  &  &  &  &  \\ \hline
+29 & \begin{tabular}[c]{@{}l@{}}Unified Host and\\ Network Dataset\end{tabular} &  &  &  &  &  &  &  &  \\ \hline
 30 & Stratosphere IPS &  &  &  &  &  &  &  &  \\ \hline
 31 & Detecting Malicious URLs &  &  &  &  &  &  &  &  \\ \hline
-32 & \multicolumn{1}{l|}{UNM Intrusion Detection Dataset} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
-33 & \multicolumn{1}{l|}{The 2005 Moorse Sets} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
+32 & UNM Dataset & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
+33 & The 2005 Moorse Sets & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
 \end{tabular}
-\end{table*}
-\end{landscape}
+  \caption{A rotated table}
+  \label{tab:test}
+\end{sidewaystable}
