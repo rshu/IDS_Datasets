@@ -306,25 +306,29 @@ and Total Bytes. \newline
 
 \subsection{Detecting Malicious URLs}
 \textbf{Cited papers:}~\cite{ma2010exploiting}~\cite{ma2009identifying}~\cite{ma2009beyond} \newline
-\textbf{Description:} \newline
+\textbf{Description:} For benign URLs, they used two data sources. One is the
+DMOZ Open Directory Project, which is a directory whose entries are vetted manually by editors. The second source of benign URLs was the random URL selector for Yahoo’s directory. They also drew from two sources for URLs to malicious sites: PhishTank and Spamscatter. PhishTank is a blacklist of phishing URLs consisting of manually-verified user contributions. Spamscatter is a spam collection infrastructure from which we extract
+URLs from the bodies of those messages.\newline
 \textbf{Research Goals:}  \newline
-\textbf{Data Structure:} The data set consists of about 2.4 million URLs (examples) and 3.2 million features \newline
+\textbf{Data Structure:} The data set consists of about 2.4 million URLs (examples) and 3.2 million features. \newline
 \textbf{Evaluation Measurements:} \newline
 
 
 \subsection{UNM Intrusion Detection Dataset}
-\textbf{Cited papers:} \newline
+\textbf{Cited papers:}~\cite{yao2006enhanced} \newline
 \textbf{Description:} Each trace is the list of system calls issued by an lpr process from the beginning of its execution to the end. There are 182 different system calls in the dataset.\newline
 \textbf{Research Goals:}  \newline
-\textbf{Data Structure:} \newline
+\textbf{Data Structure:} It consists of 4, 298 normal traces and 1,001 intrusion traces.\newline
 \textbf{Evaluation Measurements:} \newline
 
 
-\subsection{Chromium Dataset}
-\textbf{Cited papers:} \newline
-\textbf{Description:} \newline
+\subsection{Apache JIRA and Chromium Dataset}
+\textbf{Cited papers:}~\cite{peters2018text}~\cite{ohira2015dataset} \newline
+\textbf{Description:}They use a total of five projects: four from Apache JIRA and a subset of bug reports from the Chromium project. Table The Chromium dataset comes from the 2011 mining challenge of the Mining Software Repositories conference. \newline
 \textbf{Research Goals:}  \newline
-\textbf{Data Structure:} \newline
+\textbf{Data Structure:} There are six kinds of high impact bugs reports in
+the datasets Apache JIRA. These include, surprise, dormant, blocking, security, performance and breakage. In Chromnium project, security bugs are labelled as Bug-Security when they are submitted to the system. Each row in Apache JIRA project represents a bug report and the columns are features of the reports such as bug id, title, description, and date and time a report was submitted and fixed. Chromium's html files are converted into a single CSV file with the
+column headers, id, date, report, and security.\newline
 \textbf{Evaluation Measurements:} \newline
 
 \include{table}
